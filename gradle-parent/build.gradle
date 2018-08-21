@@ -19,3 +19,15 @@ ext {
     jacksonVersion = "2.4.4"
 }
 
+release {
+
+    scmAdapters = [
+            net.researchgate.release.GitAdapter
+    ]
+
+    git {
+        requireBranch = 'master'
+        pushToRemote = 'origin'
+        pushToBranchPrefix = ''
+    }
+}
