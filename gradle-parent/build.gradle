@@ -20,12 +20,7 @@ ext {
 
 release {
     failOnCommitNeeded = false
-    failOnPublishNeeded = true
-    failOnSnapshotDependencies = true
-    failOnUnversionedFiles = true
-    failOnUpdateNeeded = true
     tagTemplate = '$name-$version'
-    revertOnFail = true
     scmAdapters = [
             net.researchgate.release.GitAdapter
     ]
