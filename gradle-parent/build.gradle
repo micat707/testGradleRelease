@@ -31,7 +31,7 @@ release {
     ]
 
     git {
-        requireBranch = 'master'
+        requireBranch = 'Branch_Dev'
         pushToRemote = 'origin'
         pushToBranchPrefix = ''
     }
