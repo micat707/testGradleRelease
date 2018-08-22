@@ -1,10 +1,5 @@
-apply plugin: "io.spring.dependency-management"
-apply plugin: "net.researchgate.release"
 group 'com.test'
 
-repositories {
-    mavenCentral()
-}
 dependencyManagement {
     dependencies {
         dependency 'org.springframework:spring-core:4.0.3.RELEASE'
@@ -20,9 +15,8 @@ ext {
 afterReleaseBuild.dependsOn publish
 release {
     tagTemplate = '$name-$version'
-    scmAdapters = [
-            net.researchgate.release.GitAdapter
-    ]
+
+
 
     git {
         requireBranch = 'Branch_Dev'
