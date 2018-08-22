@@ -12,12 +12,3 @@ ext {
     springVersion = "4.3.3.RELEASE"
     jacksonVersion = "2.4.4"
 }
-afterReleaseBuild.dependsOn publish
-release {
-    tagTemplate = '$name-$version'
-    git {
-        requireBranch = 'Branch_Dev'
-        pushToRemote = 'origin'
-        pushToBranchPrefix = ''
-    }
-}
