@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Premain-Class: com.test.agentmain.StartupTest
+Built-By: usuario
+Agent-Class: com.test.agentmain.StartupTest
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
+Created-By: Apache Maven 3.3.1
+Build-Jdk: 1.8.0_66
+
